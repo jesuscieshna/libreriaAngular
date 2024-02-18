@@ -1,0 +1,19 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+    <app-barra-cierre></app-barra-cierre>
+    <div style="display: flex; flex-direction: column; flex-wrap: wrap;" class="container">
+        <h1>Autores</h1>
+        <div class="car__v">
+            <p-card *ngFor="let autor of autores">
+                <span style="font-weight: bold">
+                    {{autor.nombre|uppercase}}
+                </span>
+            </p-card>
+        </div>
+    </div>
+    <div class="position__btn__nuevoAutor">
+        <button pButton
+        [routerLink]="['/main/nuevo-libro']"
+        label="Nuevo Autor" icon="pi pi-plus" class="p-button-success">
+        </button>
+    </div>
+    </div>
