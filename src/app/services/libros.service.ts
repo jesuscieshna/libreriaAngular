@@ -11,10 +11,9 @@ export class LibrosService {
       'Content-Type':'application/json'
     }
   }
-  private baseUrl= "https://localhost:44329/api/";
   constructor(private http:HttpClient) { }
   public getLibros(){
-    return this.http.get<Libro[]>(`${this.baseUrl}libro/libro-controller`,this.options)
+    return this.http.get<Libro[]>('http://localhost:3000/libros',this.options)
   }
 }
 

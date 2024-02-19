@@ -13,7 +13,7 @@ export class BarraNavegacionComponent {
     this.navBar=
     [{
       label:"Libros",
-      icon:"https://cdn-icons-png.flaticon.com/512/5606/5606108.png",
+      icon:"https://cdn-icons-png.flaticon.com/128/3532/3532104.png",
       command:()=>{
         this.router.navigateByUrl("main/libros")}
     },
@@ -29,7 +29,7 @@ export class BarraNavegacionComponent {
       command:()=>{
         this.router.navigateByUrl("main/temas")}
     },
-    
+
     ]
   }
   navBar:MenuItem[]=[]

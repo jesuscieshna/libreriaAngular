@@ -1,24 +1,23 @@
 <div class="animate__animated animate__fadeIn animate__faster">
 <app-barra-cierre></app-barra-cierre>
 <div style="display: flex; flex-direction: column; flex-wrap: wrap;" class="container">
-    <h1>Libros</h1>
-    <div class="car__v">
-        <p-card *ngFor="let libro of libros">
+    <h1 style="padding: 1rem;">Libros</h1>
+    <div class="card__v">
+        <p-card class="card" *ngFor="let libro of libros" >
             <ng-template pTemplate="header">
-                <img class="cardIMG" src="../../../assets/Libro_enf.png"/>
-                
+                <img class="cardIMG" [src]="libro.URL"/>
+
             </ng-template>
             <span style="font-weight: bold">
-                {{libro.nombre|uppercase}}
+                {{libro.Titulo|uppercase}}
             </span>
-            <p>Autor:{{libro.autor}}</p>
-            <p>Editorial:{{libro.edicion}}</p>
-            <p>Edición:{{libro.edicion}}</p>
-            <p>Formato:{{libro.formato|uppercase}}</p>
-            <p>Precio:{{libro.precio|currency:"€"}}</p>
-            <p>Isbn:{{libro.isbn}}</p>
+            <p>Autor:{{libro.Autor}}</p>
+            <p>Edición:{{libro.Edicion}}</p>
+            <p>Formato:{{libro.Formato|uppercase}}</p>
+            <p>Precio:{{libro.Precio|currency:"€"}}</p>
+            <p>Isbn:{{libro.ISBN}}</p>
             <ng-template pTemplate="footer">
-                Cantidad:{{libro.cantidad}}
+                Cantidad:{{libro.Cantidad}}
             </ng-template>
         </p-card>
     </div>

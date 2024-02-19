@@ -1,25 +1,25 @@
 export class Libro {
-    id:       number;
-    isbn:     string;
-    nombre:   string;
-    autor:    string;
-    edicion:  string;
-    formato:  string;
-    tema:     string;
-    precio:   number;
-    cantidad: number;
-    imgname:  null;
+    Id:       number;
+    ISBN:     string;
+    Titulo:   string;
+    Precio:   number;
+    Tema:     string;
+    Autor:    string;
+    Edicion:  string;
+    Formato:  string;
+    Cantidad: number;
+    URL:  null;
 
     constructor(){
-        this.id = 0;
-        this.isbn = "";
-        this.nombre = "";
-        this.autor = "";
-        this.edicion = "";
-        this.formato = "";
-        this.tema = "";
-        this.precio = 0;
-        this.cantidad = 0;
-        this.imgname = null;
+        this.Id = 0;
+        this.ISBN = "";
+        this.Titulo = "";
+        this.Autor = "";
+        this.Edicion = "";
+        this.Formato = "";
+        this.Tema = "";
+        this.Precio = 0;
+        this.Cantidad = 0;
+        this.URL = null;
     }
 }
